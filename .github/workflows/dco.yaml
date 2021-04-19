@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+      name: itdove/gitactions-test-dco     <-- clone https://github.com/org1/repo1
+      ref: refs/heads/release
     
     - name: Extract branch name
       shell: bash
