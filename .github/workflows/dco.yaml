@@ -14,8 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        repository: itdove/gitactions-test-dco
-        ref: refs/heads/release
+        fetch-depth: 0
     
     - name: Extract branch name
       shell: bash
