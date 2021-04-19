@@ -7,7 +7,7 @@ echo "Check all commit signed on branch: ${BRANCH}"
 # find .git/refs -print
 # cat `find .git/refs -print`
 COMMITID=$(cat .git/refs/remotes/origin/main)
-COMMITS=$(git log ${COMMITID}..origin/${BRANCH} -- | grep ^commit | cut -d ' ' -f2)
+COMMITS=$(git log origin/main..origin/${BRANCH} -- | grep ^commit | cut -d ' ' -f2)
 for c in ${COMMITS}
 do
   COMMIT=$(git show ${c} -q)
