@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        repository: itdove/gitactions-test-dco     <-- clone https://github.com/org1/repo1
+        repository: itdove/gitactions-test-dco
         ref: refs/heads/release
     
     - name: Extract branch name
