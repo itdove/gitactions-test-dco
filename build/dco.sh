@@ -4,6 +4,7 @@ set -x
 set -e
 BRANCH=$1
 echo "Check all commit signed on branch: ${BRANCH}"
+find .git/refs -print
 cat `find .git/refs -print`
 COMMITID=`cat .git/refs/remotes/origin/main`
 COMMITS=$(git log ${COMMITID}..${BRANCH} -- | grep ^commit | cut -d ' ' -f2)
