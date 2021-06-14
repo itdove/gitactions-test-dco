@@ -21,7 +21,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          body_path: CHANGELOG.txt
+          body_path: CHANGELOG.md
           files: |
             bin/README.md
             Makefile
