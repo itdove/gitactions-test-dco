@@ -22,7 +22,7 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
           body: |
-            Changes in this Release
+            Changes in this Releasessss
             - First Change
             - Second Change
           draft: true
