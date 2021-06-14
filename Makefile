@@ -6,5 +6,5 @@ dco:
 
 .PHONY: build-bin
 build-bin:
-    mkdir -p bin
+	mkdir -p bin
 	cp README.md bin/README.md
