@@ -17,7 +17,7 @@ jobs:
         run: |
           make build-bin
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: open-cluster-management-io/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
